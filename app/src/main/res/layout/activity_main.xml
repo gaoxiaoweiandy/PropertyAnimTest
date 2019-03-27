@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:id="@+id/liulangdashi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/dashi"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大师"
+            android:background="#0000ff"
+            android:onClick="startFirstAnimation"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/gaibangbangzhu"
+        android:src="@mipmap/qiaofeng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:onClick="startSecondAnimation"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>
